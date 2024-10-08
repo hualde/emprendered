@@ -15,6 +15,7 @@ class Auth0ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBounda
   }
 
   static getDerivedStateFromError(_: Error): ErrorBoundaryState {
+    // Instead of using the underscore, we'll use 'error' as the parameter name
     return { hasError: true }
   }
 
